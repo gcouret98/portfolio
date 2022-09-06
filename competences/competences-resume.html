@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- TODO COPIER COLLER MODELE DANS realisations-resume.html -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Justin - Personal Portfolio</title>
-    <meta name="description" content="Justin - Personal Portfolio" />
+    <title>Couret Guillaume - Portfolio</title>
+    <meta name="description" content="Couret Guillaume - Portfolio" />
     <meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
-    <meta name="author" content="beingeorge" />
+    <meta name="author" content="Couret Guillaume" />
     <meta name="theme-color" content="#2a2d35">
 
     <!-- Vendor Css-->
-    <link rel="stylesheet" href="assets/css/vendor.css" />
+    <link rel="stylesheet" href="../assets/css/vendor.css" />
 
     <!-- Settings-panel -->
-    <link href="assets/css/settings.css" rel="stylesheet">
+    <link href="../assets/css/settings.css" rel="stylesheet">
 
     <!-- Custom style Css -->
-    <link href="assets/css/custom.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../../assets/css/competences-resume.css"> -->
+
+
 
     <!-- JustinTemplate style Css -->
-    <link rel="stylesheet" href="assets/css/justin-red.css">
-    <!-- <link rel="stylesheet" href="assets/css/justin-pink.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/justin-yellow.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/justin-purple.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/justin-green.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/justin-blue.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/justin--deep-blue.css"> -->
+    <!-- <link rel="stylesheet" href="../../assets/css/justin-red.css"> -->
+    <!-- <link rel="stylesheet" href="../../assets/css/justin-pink.css"> -->
+    <!-- <link rel="stylesheet" href="../../assets/css/justin-yellow.css"> -->
+    <!-- <link rel="stylesheet" href="../../assets/css/justin-purple.css"> -->
+    <!-- <link rel="stylesheet" href="../../assets/css/justin-green.css"> -->
+    <link rel="stylesheet" href="../assets/css/justin-blue.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/justin--deep-blue.css"> -->
 
 </head>
 
@@ -34,7 +38,7 @@
 
     <!-- Setting Panel -->
 
-    <div class="settings_panel">
+    <!-- <div class="settings_panel">
         <div class="toggle_bts">
             <a class="toggle-theme-panel" href="#">
                 <i class="fa fa-cog"></i>
@@ -66,7 +70,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
     <!-- Setting Panel -->
     <!-- START: Preloader -->
@@ -79,11 +83,11 @@
 
     <!-- Navigation start -->
 
-    <nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-light fixed-top">
         <div class="container">
 
-            <a class="navbar-brand  mr-auto " href="index.html">Justin
-				<!-- <img src="assets/images/logo.png" alt="Logo"> -->
+            <a class="navbar-brand  mr-auto " href="../index.html">Guillaume
+				<!-- <img src="../assets/images/logo.png" alt="Logo"> -->
 			</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,12 +96,11 @@
 
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
-                    <li><a class="nav-link" href="index-1.html#home">home</a></li>
-                    <li><a class="nav-link" href="index-1.html#services">Service</a></li>
-                    <li><a class="nav-link" href="index-1.html#resume">EXPERTISES</a></li>
-                    <li><a class="nav-link" href="index-1.html#work">Works</a></li>
-                    <li><a class="nav-link active" href="index-1.html#blog">Blog</a></li>
-                    <li><a class="nav-link" href="index-1.html#contact">Contact</a></li>
+                    <li><a class="nav-link" href="../index.html#home">Accueil</a></li>
+                    <li><a class="nav-link" href="../index.html#resume">Parcours</a></li>
+                    <li><a class="nav-link" href="../index.html#competences">Compétences</a></li>
+                    <li><a class="nav-link" href="../index.html#realisations">Réalisations</a></li>
+                    <li><a class="nav-link" href="../index.html#contact">Contactez-moi</a></li>
                 </ul>
             </div>
         </div>
@@ -110,8 +113,7 @@
         <div class="container">
 
             <div class="section-head">
-                <span>Blog</span>
-                <h2>My Articles</h2>
+                <h2>Mes compétences</h2>
             </div>
 
             <!-- Portfolio Filter start-->
@@ -121,10 +123,9 @@
                 <div class="col-sm-12">
 
                     <ul id="filter">
-                        <li class="active" data-group="all">All</li>
-                        <li data-group="design">Design</li>
-                        <li data-group="travel">Travel</li>
-                        <li data-group="passion">Passion</li>
+                        <li class="active" data-group="all">Toutes</li>
+                        <li data-group="technique">Techniques</li>
+                        <li data-group="humaine">Humaines</li>
                     </ul>
 
                 </div>
@@ -134,42 +135,36 @@
 
             <!-- Portfolio Filter end -->
 
-
-
             <ul class="list-items-container blog-wrapper">
 
-                <li class="list-item" data-groups="all design">
+                <li class="list-item" data-groups="all technique">
                     <a href="blog-detail.html" class="blog-list">
                         <div class="blog-list--img wow fadeIn" data-wow-duration="1.5s">
-                            <img src="assets/images/blog-1.jpg" alt="Blog Image" class="img-fluid">
+                            <img src="../assets/images/gitlab-logo.png" alt="Blog Image" class="img-fluid">
                             <div class="blog-list--details d-flex justify-content-center align-items-center">
-                                <div class="blog-list--details-in">
+                                <!-- <div class="blog-list--details-in">
                                     <p class="blog-by text-white">Alice Joseph</p>
                                     <span class="blog-duration text-white">2 Mins Read</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="blog-list--desc p-3">
-                            <p>10 tips for drawing with coloured pencils</p>
-                            <span class="d-block text-center mt-3 font-weight-bold blog-cat">Design</span>
+                            <span class="d-block text-center mt-3 font-weight-bold">zzzzz</span>
                         </div>
                     </a>
                 </li>
 
-                <li class="list-item" data-groups="all travel">
+                <li class="list-item" data-groups="all humaine">
                     <a href="blog-detail.html" class="blog-list">
                         <div class="blog-list--img">
-                            <img src="assets/images/p8-8.jpg" alt="Blog Image" class="img-fluid">
+                            <img src="../assets/images/p8-8.jpg" alt="Blog Image" class="img-fluid">
                             <div class="blog-list--details d-flex justify-content-center align-items-center">
-                                <div class="blog-list--details-in">
-                                    <p class="blog-by text-white">Alice Joseph</p>
-                                    <span class="blog-duration text-white">2 Mins Read</span>
-                                </div>
+
                             </div>
                         </div>
                         <div class="blog-list--desc p-3">
-                            <p>The single greatest gift to get your friend who always travels</p>
-                            <span class="d-block text-center mt-3 font-weight-bold blog-cat">Travel</span>
+
+                            <span class="d-block text-center mt-3 font-weight-bold">zzzzz</span>
                         </div>
                     </a>
                 </li>
@@ -177,53 +172,44 @@
                 <li class="list-item" data-groups="all passion">
                     <a href="blog-detail.html" class="blog-list">
                         <div class="blog-list--img">
-                            <img src="assets/images/blog-2.jpg" alt="Blog Image" class="img-fluid">
+                            <img src="../assets/images/blog-2.jpg" alt="Blog Image" class="img-fluid">
                             <div class="blog-list--details d-flex justify-content-center align-items-center">
-                                <div class="blog-list--details-in">
-                                    <p class="blog-by text-white">Alice Joseph</p>
-                                    <span class="blog-duration text-white">2 Mins Read</span>
-                                </div>
+
                             </div>
                         </div>
                         <div class="blog-list--desc p-3">
-                            <p>The single greatest gift to get your friend who always travels</p>
-                            <span class="d-block text-center mt-3 font-weight-bold blog-cat">Travel</span>
+
+                            <span class="d-block text-center mt-3 font-weight-bold">zzzzz</span>
                         </div>
                     </a>
                 </li>
 
-                <li class="list-item" data-groups="all design">
+                <li class="list-item" data-groups="all technique">
                     <a href="blog-detail.html" class="blog-list">
                         <div class="blog-list--img">
-                            <img src="assets/images/blog-3.jpg" alt="Blog Image" class="img-fluid">
+                            <img src="../assets/images/blog-3.jpg" alt="Blog Image" class="img-fluid">
                             <div class="blog-list--details d-flex justify-content-center align-items-center">
-                                <div class="blog-list--details-in">
-                                    <p class="blog-by text-white">Alice Joseph</p>
-                                    <span class="blog-duration text-white">2 Mins Read</span>
-                                </div>
+
                             </div>
                         </div>
                         <div class="blog-list--desc p-3">
-                            <p>The single greatest gift to get your friend who always travels</p>
-                            <span class="d-block text-center mt-3 font-weight-bold blog-cat">design</span>
+
+                            <span class="d-block text-center mt-3 font-weight-bold">zzzzz</span>
                         </div>
                     </a>
                 </li>
 
-                <li class="list-item" data-groups="all travel">
+                <li class="list-item" data-groups="all humaine">
                     <a href="blog-detail.html" class="blog-list">
                         <div class="blog-list--img">
-                            <img src="assets/images/p2-2.jpg" alt="Blog Image" class="img-fluid">
+                            <img src="../assets/images/p2-2.jpg" alt="Blog Image" class="img-fluid">
                             <div class="blog-list--details d-flex justify-content-center align-items-center">
-                                <div class="blog-list--details-in">
-                                    <p class="blog-by text-white">Alice Joseph</p>
-                                    <span class="blog-duration text-white">2 Mins Read</span>
-                                </div>
+
                             </div>
                         </div>
                         <div class="blog-list--desc p-3">
-                            <p>The single greatest gift to get your friend who always travels</p>
-                            <span class="d-block text-center mt-3 font-weight-bold blog-cat">Travel</span>
+
+                            <span class="d-block text-center mt-3 font-weight-bold">zzzzz</span>
                         </div>
                     </a>
                 </li>
@@ -231,35 +217,29 @@
                 <li class="list-item" data-groups="all passion">
                     <a href="blog-detail.html" class="blog-list">
                         <div class="blog-list--img">
-                            <img src="assets/images/p3-3.jpg" alt="Blog Image" class="img-fluid">
+                            <img src="../assets/images/p3-3.jpg" alt="Blog Image" class="img-fluid">
                             <div class="blog-list--details d-flex justify-content-center align-items-center">
-                                <div class="blog-list--details-in">
-                                    <p class="blog-by text-white">Alice Joseph</p>
-                                    <span class="blog-duration text-white">2 Mins Read</span>
-                                </div>
+
                             </div>
                         </div>
                         <div class="blog-list--desc p-3">
-                            <p>The single greatest gift to get your friend who always travels</p>
-                            <span class="d-block text-center mt-3 font-weight-bold blog-cat">passion</span>
+
+                            <span class="d-block text-center mt-3 font-weight-bold">zzzzz</span>
                         </div>
                     </a>
                 </li>
 
-                <li class="list-item" data-groups="all travel">
+                <li class="list-item" data-groups="all humaine">
                     <a href="blog-detail.html" class="blog-list">
                         <div class="blog-list--img">
-                            <img src="assets/images/p4-4.jpg" alt="Blog Image" class="img-fluid">
+                            <img src="../assets/images/p4-4.jpg" alt="Blog Image" class="img-fluid">
                             <div class="blog-list--details d-flex justify-content-center align-items-center">
-                                <div class="blog-list--details-in">
-                                    <p class="blog-by text-white">Alice Joseph</p>
-                                    <span class="blog-duration text-white">2 Mins Read</span>
-                                </div>
+
                             </div>
                         </div>
                         <div class="blog-list--desc p-3">
-                            <p>The single greatest gift to get your friend who always travels</p>
-                            <span class="d-block text-center mt-3 font-weight-bold blog-cat">Travel</span>
+
+                            <span class="d-block text-center mt-3 font-weight-bold">zzzzz</span>
                         </div>
                     </a>
                 </li>
@@ -267,35 +247,29 @@
                 <li class="list-item" data-groups="all passion">
                     <a href="blog-detail.html" class="blog-list">
                         <div class="blog-list--img">
-                            <img src="assets/images/blog-1.jpg" alt="Blog Image" class="img-fluid">
+                            <img src="../assets/images/blog-1.jpg" alt="Blog Image" class="img-fluid">
                             <div class="blog-list--details d-flex justify-content-center align-items-center">
-                                <div class="blog-list--details-in">
-                                    <p class="blog-by text-white">Alice Joseph</p>
-                                    <span class="blog-duration text-white">2 Mins Read</span>
-                                </div>
+
                             </div>
                         </div>
                         <div class="blog-list--desc p-3">
-                            <p>The single greatest gift to get your friend who always travels</p>
-                            <span class="d-block text-center mt-3 font-weight-bold blog-cat">passion</span>
+
+                            <span class="d-block text-center mt-3 font-weight-bold">zzzzz</span>
                         </div>
                     </a>
                 </li>
 
-                <li class="list-item" data-groups="all design">
+                <li class="list-item" data-groups="all technique">
                     <a href="blog-detail.html" class="blog-list">
                         <div class="blog-list--img">
-                            <img src="assets/images/p5-5.jpg" alt="Blog Image" class="img-fluid">
+                            <img src="../assets/images/p5-5.jpg" alt="Blog Image" class="img-fluid">
                             <div class="blog-list--details d-flex justify-content-center align-items-center">
-                                <div class="blog-list--details-in">
-                                    <p class="blog-by text-white">Alice Joseph</p>
-                                    <span class="blog-duration text-white">2 Mins Read</span>
-                                </div>
+
                             </div>
                         </div>
                         <div class="blog-list--desc p-3">
-                            <p>The single greatest gift to get your friend who always travels</p>
-                            <span class="d-block text-center mt-3 font-weight-bold blog-cat">design</span>
+
+                            <span class="d-block text-center mt-3 font-weight-bold">zzzzz</span>
                         </div>
                     </a>
                 </li>
@@ -322,17 +296,17 @@
 
     <!-- JAVASCRIPTS -->
 
-    <script src="assets/js/vendor.js"></script>
-    <!-- <script src="assets/js/smooth-scroll.js"></script> -->
+    <script src="../assets/js/vendor.js"></script>
+    <!-- <script src="../assets/js/smooth-scroll.js"></script> -->
 
     <!-- Map -->
-    <script src="assets/js/map.js"></script>
+    <script src="../assets/js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79MY72taVRlZVX2DU6L5PXOh3ezUUKMc&amp;callback=initMap" async="" defer=""></script>
 
     <!-- Custom Js -->
-    <script src="assets/js/imagesloaded.pkgd.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/custom-shuffle-init.js"></script>
+    <script src="../assets/js/imagesloaded.pkgd.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/custom-shuffle-init.js"></script>
 </body>
 
 </html>

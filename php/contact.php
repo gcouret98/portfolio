@@ -1,8 +1,10 @@
 <?php
 
-$subject = "You have been contacted by ";
-$success_message = "Your messege has been sent sucesfully!";
-$fail_message = "Sorry, something went wrong! Please try again.";
+die('totototo');
+
+$subject = "Vous avez était contacté par ";
+$success_message = "Votre message est envoyé ! ";
+$fail_message = "Désolé, il y a eu un problème, passez par votre messagerie, mon email est : g.couret@groupe-aen.info";
 
 // Configuration option.
 // Enter the email address that you want to emails to be sent to.
@@ -10,7 +12,7 @@ $fail_message = "Sorry, something went wrong! Please try again.";
 
 //$admin_email = "example@example.com";
 
-$admin_email = 'example@example.com'; //Replace this with your email id
+$admin_email = 'g.couret@groupe-aen.info'; //Replace this with your email id
 
 $validate = true;
 $name = filter_var($_POST['name'], FILTER_SANITIZE_SPECIAL_CHARS);
@@ -25,12 +27,12 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 // Message
 
-$e_body = "You have been contacted by $name. Their additional message is as follows." . PHP_EOL . PHP_EOL;
+$e_body = "Vous avez était contacté par $name. le message est le suivant : " . PHP_EOL . PHP_EOL;
 $e_content = "\"$msg\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name via email, $email";
+$e_reply = "Contactez $name via email, $email";
 
 
-$message = wordwrap( $e_body . $e_content . $e_reply, 70 );
+$message = wordwrap($e_body . $e_content . $e_reply, 70);
 
 $headers = "From: $email" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
@@ -39,7 +41,7 @@ $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 // Mail it
-if ($validate && mail( $admin_email, "$subject by $name", $message, $headers)) {
+if ($validate && mail($admin_email, "$subject by $name", $message, $headers)) {
 	echo $success_message;
 } else {
 	echo $fail_message;

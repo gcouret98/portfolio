@@ -565,7 +565,7 @@ a {
 
 .navbar.fixed-top {
     position: fixed !important;
-    display: none;
+    display: block;
 }
 
 .navbar-nav .nav-link {
