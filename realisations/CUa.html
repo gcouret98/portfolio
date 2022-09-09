@@ -79,17 +79,21 @@
             <div class="blog-detail-about clearfix">
                 <div class="media float-left align-items-center">
                     <div class="media-left mr-3">
-                        <img src="../assets/images/logo-biarritz-960x640.jpg" class="media-object" alt="avatar">
+                        <img src="../assets/images/btzLogo.jpeg" class="media-object" alt="avatar">
                     </div>
                 </div>
             </div>
             <div class="blog-detail-content">
 
-                <h3>Contexte</h3>
+                <h3 style="font-weight: 900 !important;">Contexte</h3>
 
                 <p>La ville de Biarritz est abonnée au SaaS Clicmap, le logiciel phare d’IF Technologies (l’entreprise dans laquelle j’ai réalisé mon alternance de 2 ans). Biarritz utilise Clicmap pour répertorier et instruire tous ses dossiers d’urbanisme
                     (Permis de construire, Déclaration préalable, Certificat d'urbanisme, Autorisation de travaux). Les dossiers sont déposés via une plateforme web ouverte au public e-permis, qui permet à un particulier, une entreprise ou un notaire
                     de déposer rapidement et facilement un permis de construire par exemple.</p>
+
+                <p>Clicmap est équipe environ 800 communes en France et à compter du 1er janvier 2022, les communes de plus de 3500 habitants doivent s'orientées vers la dématérialisation pour l'instruction, pour plus d'informations :
+                    <a href="https://www.collectivites-locales.gouv.fr/institutions/platau-ctes">PLAT’AU-@CTES</a>
+                </p>
 
                 <p>Les CUa (Certificat d'urbanisme d’information) sont nécessaires avant de commencer un projet urbain pour connaître le régime juridique auquel le terrain est soumis, les limites au droit de propriété (servitudes d'utilité publique par exemple)
                     ou les taxes et participations d’urbanisme.</p>
@@ -100,7 +104,7 @@
                 <p>L’entreprise IF Technologies a donc été mandatée pour mettre au point un script qui réceptionne et instruit les dossiers de manière autonome, afin de soulager le service urbanisme de Biarritz.</p>
 
                 <p>On m’a ensuite confié la réalisation de ce projet.</p>
-                <h3>Travaux réalisés</h3>
+                <h3 style="font-weight: 900 !important;">Travaux réalisés</h3>
                 <p>Avant de plonger tête baissée dans le développement, j’ai préféré réaliser un diagramme de séquence qui résume toutes les actions du script, pour ensuite le partager avec la cheffe du service urbanisme pour confirmer les étapes du script.</p>
 
                 <p>Une fois le diagramme validé, j’ai pu commencer le développement, j’ai d’abord écrit en commentaire les étapes que je devais suivre. Puis j’ai développé chaque étape en utilisant autant que possible les fonctions déjà existantes, j’ai
@@ -108,8 +112,7 @@
 
                 <blockquote>Capture d'écran de clicmap, SaaS pour l'instruction du droit des sols</blockquote>
 
-                <!-- TODO FLOUTER LES NOMS
-                <img src="../assets/images/cuas.png" alt="Blog Desc"> -->
+                <img src="../assets/images/cuas.png">
 
                 <h2>Pour résumer le comportement du script :</h2>
 
@@ -119,14 +122,15 @@
                 <p>Ensuite pour l’exécution du script, nous avons demandé à la mairie de Biarritz quand elle souhaitait importer, instruire et fournir les éléments au demandeur. Ils ont choisi d’importer automatiquement les CUa tous les jours à 17h. Les
                     demandeurs seront ravis d’obtenir dans un délai d’un seul jour la réponse, contrairement à 5 voire 10 jours si c’est un utilisateur qui s’occupe de l’instruction.</p>
 
-                <p>Pour exécuter ce script tous les jours à 17h il faut créer un CRON (définition) sur le serveur, qui lance un fichier BASH (.sh) contenant un appel CURL (définition) vers un lien pointant sur mon fichier PHP.</p>
-                <p>(Anecdote CRON comportement ! == navigateur comportement.)</p>
+                <p>Pour exécuter ce script tous les jours à 17h il faut créer un
+                    <a href="https://fr.wikipedia.org/wiki/Cron" target="_blank">CRON</a> sur le serveur, qui lance un fichier BASH (.sh) contenant un appel CURL vers un lien pointant sur mon fichier PHP.</p>
                 <p>Finalement, le script est bien fonctionnel il a été livré à la date prévue, il est utilisé tous les jours depuis le jeudi 1 septembre. Ce projet libère du temps au personnel du service urbanisme pour réaliser d’autres tâches. Ce script
                     peut aussi évoluer pour importer et instruire d’autres types de dossiers d’urbanisme automatiquement.</p>
 
-                <h3>Résultat</h3>
+                <h3 style="font-weight: 900 !important;">Résultat</h3>
 
                 <p>Ce projet m’a permis une meilleure compréhension de l’environnement global du Logiciel. Reprendre chaque étape m’a fait comprendre comment fonctionne le logiciel dans les grandes lignes.</p>
+
                 <p>Cela m’a permis d’approfondir mes connaissances en PHP, apprendre à utiliser l’api PLATAU, savoir comment lier plusieurs services déjà présents comme une api et des fonctions existantes. J’ai aussi appris à mieux m’organiser pour respecter
                     la date de rendu. </p>
 
@@ -151,7 +155,7 @@
                                     <a class="tags" href="/competences/sql.html">SQL</a>
                                 </li>
                                 <li>
-                                    <<a class="tags" href="/competences/gestion-projet.html">Gestion de projet</a>
+                                    <a class="tags" href="/competences/gestion-projet.html">Gestion de projet</a>
                                 </li>
                             </ul>
                         </div>
@@ -293,6 +297,7 @@
     <!-- JAVASCRIPTS -->
 
     <script src="../assets/js/vendor.js"></script>
+
     <!-- <script src="../assets/js/smooth-scroll.js"></script> PAS PRESENT -->
 
     <!-- Map -->
